@@ -1,0 +1,275 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+/*p {
+	font-family: 'Open Sans', Arial, sans-serif;
+}*/
+
+/* Header */
+
+header {
+	text-transform: uppercase;
+	color: #82868F;
+	height: 80px;
+	background-color: #F7FDFE;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 44px;
+}
+
+header h2 {
+	padding: 25px 0 25px 17.36%;
+	display: inline-block;
+	float: left;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+/* MENU TOP */
+
+header ul,
+footer nav ul {
+	display: inline-block;
+	height: 80px;
+	font-size: 0;
+}
+
+header ul li,
+footer nav ul li {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 80px;
+	padding-right: 30px;
+}
+header ul li a,
+footer nav ul li a {
+	color: #82868F;
+}
+
+/* BUTTONS */
+
+header ul li a, header .button,
+footer nav ul li a {
+	text-decoration: none;
+	font-size: 14px;
+}
+header.button {
+	color: #fff;
+}
+.button {
+	border: 1px solid #0EBFDD;
+}
+.button,
+.buttonalt {
+	background-color: #0EBFDD;
+	border-radius: 25px;
+	padding: 15px 35px 12px;
+	margin-right: 17.36%;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.button:hover {
+	color: #0EBFDD;
+	background-color: #F7FDFE;
+}
+.buttonalt {
+	border: 1px solid #fff;
+}
+.buttonalt:hover {
+	color: #0EBFDD;
+	background-color: #fff;
+}
+.headright {
+	text-align: right;
+}
+
+/* Section Info */
+
+.intro {
+	background: url('../img/info-bg.jpg');
+	color: #F7FDFE;
+	background-size: cover;
+}
+
+.intro h2 {
+	padding-top: 400px;
+	padding-bottom: 30px;
+}
+.intro h2:before,
+.intro h2:after {
+	content: "★";
+	font-size: 12px;
+	margin: 0 20px;
+	vertical-align: middle;
+}
+.intro p,
+.short_bio p {
+	padding:0 20% 90px;
+	font-size: 20px;
+	line-height: 1.8;
+	font-weight: 100;
+}
+
+/* Short Bio */
+
+.short_bio h2 {
+	color: #0EBFDD;
+	padding-top: 70px;
+	padding-bottom: 30px;
+}
+
+.short_bio p {
+	padding-bottom: 70px;
+}
+
+/* TEAM */
+
+.team {
+	color: #fff;
+	background-color: #0EBFDD;
+}
+.team h2 {
+	padding-top: 60px;
+	padding-bottom: 100px;
+}
+
+/* Team Photos */
+
+.images div {
+	display: inline-block;
+}
+.images img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+
+}
+.images>div {
+	margin-right: 70px;
+}
+.images>div:last-child {
+	margin-right: 0;
+}
+.images .name {
+	padding-top: 10px;
+}
+.images .role {
+	font-style: italic;
+	font-weight: 300;
+	padding-top: 5px;
+}
+.team .buttonalt {
+	margin: 100px auto 60px;
+}
+
+/* MAP SECTION */
+
+.map {
+	background: url("../img/map2.jpg");
+	background-size: cover;
+	height: 600px;
+	position: relative;
+}
+
+.popup {
+	position: relative;
+	width: 170px;
+	height: 80px;
+	background-color: #45494D;
+	padding: 12px;
+	font-size: 13px;
+	color: #888E95;
+	line-height: 1.4;
+	border-radius: 4px;
+	top: 190px;
+	left: 375px;
+}
+.popup:after {
+	content: '';
+	border: 5px solid transparent;
+	border-top: 5px solid #45494D;
+	position: absolute;
+	bottom: -10px;
+	z-index: 2;
+	left: 20px;
+}
+
+.popup .bold {
+	font-weight: bold;
+	color: #fff;
+	font-size: 15px;
+}
+
+/* FOOTER */
+
+footer {
+	height: 120px;
+	background-color: #45494D;
+	padding-left: 17.36%;
+	padding-right: 17.36%;
+}
+
+/* Footer Nav */
+
+footer nav ul li a {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #D8DEE4;
+}
+footer nav {
+	border-bottom: 1px solid rgba(216, 222, 228, 0.3);
+}
+.icon {
+	border-radius: 50%;
+	border:1px solid #D8DEE4;
+	float: right;
+	width: 40px;
+	height: 40px;
+	margin-left: 10px;
+	margin-top: 20px;
+	text-align: center;
+	position: relative;
+}
+.icon img {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+/* Bottom Right Footer */
+
+.footer-bottom {
+	font-size: 0;
+	text-align: right;
+	padding-top: 15px;
+}
+.footer-bottom li {
+	display: inline-block;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.footer-bottom li a {
+	text-decoration: none;
+	color: #82868F;
+	font-size: 12px;
+}
+.footer-bottom li:nth-child(2) {
+	border-left: 1px solid #82868F;
+	border-right: 1px solid #82868F;
+}
+.footer-bottom li:last-child {
+	padding-right: 0;
+}
